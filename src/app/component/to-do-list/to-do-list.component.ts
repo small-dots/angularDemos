@@ -17,7 +17,6 @@ export class ToDoListComponent implements OnInit {
 
   constructor() {
   }
-
   ngOnInit(): void {
   }
 
