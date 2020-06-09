@@ -11,6 +11,7 @@ import {SearchComponent} from './component/search/search.component';
 import {ToDoListComponent} from './component/to-do-list/to-do-list.component';
 import {StrongeService} from './services/stronge.service';
 import { TodoListEnduranceComponent } from './component/todo-list-endurance/todo-list-endurance.component';
+import { SlideComponent } from './component/slide/slide.component';
 // @NgModule装饰器，@NgModule接受一个元数据对象，告诉angular如何编译和启动应用
 @NgModule({
   // 项目当前运行的组件
@@ -20,7 +21,8 @@ import { TodoListEnduranceComponent } from './component/todo-list-endurance/todo
     TopComponent,
     SearchComponent,
     ToDoListComponent,
-    TodoListEnduranceComponent
+    TodoListEnduranceComponent,
+    SlideComponent
   ],
   // 项目运行时依赖的组件
   imports: [

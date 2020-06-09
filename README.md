@@ -55,3 +55,8 @@ this.strongeService.set('todoList', this.toDoList);
 ~~~
 
 <img src="https://pic4.zhimg.com/80/v2-052465185dc1fc0ba6ae5fd19f9ba62c_720w.png" alt="ToDoList---持久化"  />
+
+### 4、css结合Angular实现简单的侧边栏动画
+ > 主要是借助angualr中ViewChild修饰器，获取子组件的DOM并修改DOM的transform样式
+
+<img src="https://pic1.zhimg.com/80/v2-28c367af14014a368fa1ddaa41ca52d2_720w.gif" alt="侧边栏动画"  />
