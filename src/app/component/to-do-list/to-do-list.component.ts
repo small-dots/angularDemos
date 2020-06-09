@@ -17,6 +17,7 @@ export class ToDoListComponent implements OnInit {
 
   constructor() {
   }
+
   ngOnInit(): void {
   }
 
@@ -49,6 +50,7 @@ export class ToDoListComponent implements OnInit {
   changeStatus($event: Event, ri: any) {
     if (this.checkBean) {
       this.toDoList[ri].value = 1;
+      // TODO: zh
     }
   }
 }
