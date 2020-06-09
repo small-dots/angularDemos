@@ -1,0 +1,26 @@
+<div class="search">
+  <h2>ToDoList</h2>
+  <input class="search_input" type="text" [(ngModel)]="keyWord" (keyup)="addItem($event)">
+  <h3>代办项</h3>
+  <ul class="list">
+    <li *ngFor="let item of toDoList;let ri=index">
+      <div *ngIf="item.value===0">
+        <input type="checkbox" [(ngModel)]="item.value"
+               (change)="changeStatus($event,ri)">{{item.label}}
+        <span (click)="delete(ri)">X</span>
+      </div>
+    </li></ul>
+
+  <hr>
+  <h3>已完成</h3>
+  <ul class="list">
+    <li *ngFor="let item of toDoList;let ri=index">
+      <div *ngIf="item.value===1">
+        <input type="checkbox" [(ngModel)]="item.value"
+               (change)="changeStatus($event,ri)" disabled>{{item.label}}
+        <span (click)="delete(ri)">X</span>
+      </div>
+    </li>
+  </ul>
+</div>
+
