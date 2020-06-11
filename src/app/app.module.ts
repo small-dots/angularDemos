@@ -10,8 +10,11 @@ import {TopComponent} from './component/top/top.component';
 import {SearchComponent} from './component/search/search.component';
 import {ToDoListComponent} from './component/to-do-list/to-do-list.component';
 import {StrongeService} from './services/stronge.service';
-import { TodoListEnduranceComponent } from './component/todo-list-endurance/todo-list-endurance.component';
-import { SlideComponent } from './component/slide/slide.component';
+import {TodoListEnduranceComponent} from './component/todo-list-endurance/todo-list-endurance.component';
+import {SlideComponent} from './component/slide/slide.component';
+import {AsynchronousProgrammingService} from './services/asynchronous-programming.service';
+import { GetDateByasynComponent } from './component/get-date-byasyn/get-date-byasyn.component';
+
 // @NgModule装饰器，@NgModule接受一个元数据对象，告诉angular如何编译和启动应用
 @NgModule({
   // 项目当前运行的组件
@@ -22,7 +25,8 @@ import { SlideComponent } from './component/slide/slide.component';
     SearchComponent,
     ToDoListComponent,
     TodoListEnduranceComponent,
-    SlideComponent
+    SlideComponent,
+    GetDateByasynComponent
   ],
   // 项目运行时依赖的组件
   imports: [
@@ -30,7 +34,7 @@ import { SlideComponent } from './component/slide/slide.component';
     FormsModule
   ],
   // 项目配置需要的服务
-  providers: [StrongeService],
+  providers: [StrongeService, AsynchronousProgrammingService],
   // 指定应用的主视图（称为根组件），通过引导根AppModule来启动应用，这里一般写的是根组件
   bootstrap: [AppComponent]
 })

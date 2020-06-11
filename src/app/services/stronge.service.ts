@@ -28,6 +28,7 @@ export class StrongeService {
     return JSON.parse(localStorage.getItem(key));
   }
 
+
   /**
    * 清除缓存
    * @param key 缓存数据

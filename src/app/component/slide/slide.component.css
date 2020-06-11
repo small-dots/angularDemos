@@ -1,10 +1,11 @@
 #slide {
   width: 200px;
   height: 100%;
+  font-size: 30px;
   position: absolute;
   background: #0c8cd2;
   color: antiquewhite;
   transform: translate(100%, 0);
   right: 0px;
-  transition: all 1s;
+  transition: all 0.2s;
 }
