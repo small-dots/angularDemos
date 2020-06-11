@@ -1,0 +1,46 @@
+<h2>数据获取方法</h2>
+<hr>
+<h3>1、同步</h3>
+<h3>2、回调</h3>
+<h3>3、promise</h3>
+<h3>4、rxjs</h3>
+<hr>
+<div class="styleInput">
+  <div class="add">
+    <input type="text" [(ngModel)]="username">
+    <button (click)="add()">添加</button>
+  </div>
+  <div class="search">
+    <input type="text" [(ngModel)]="username">
+    <button (click)="searchByName()">搜索</button>
+  </div>
+</div>
+
+<hr>
+<div class="styleInput">
+  <div class="tableStyle">
+    <table border="1px">
+      <tr>
+        <th>用户编号</th>
+        <th>用户姓名</th>
+      </tr>
+      <tr *ngFor="let item of userList">
+        <td>{{item.userId}}</td>
+        <td>{{item.name}}</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="tableStyle1">
+    <table border="1px">
+      <tr>
+        <th>用户编号</th>
+        <th>用户姓名</th>
+      </tr>
+      <tr *ngFor="let item of queryList">
+        <td>{{item.userId}}</td>
+        <td>{{item.name}}</td>
+      </tr>
+    </table>
+  </div>
+</div>

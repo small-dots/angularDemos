@@ -1,0 +1,32 @@
+h2 {
+  text-align: center;
+}
+
+input {
+  text-align: center;
+}
+
+.styleInput {
+  width: 100% !important;
+  display: flex;
+}
+
+.add {
+  width: 45% !important;
+  display: flex;
+}
+
+.search {
+  width: 45% !important;
+  display: flex;
+}
+
+.tableStyle {
+  width: 45% !important;
+  display: flex;
+}
+.tableStyle1 {
+  width: 45% !important;
+  display: flex;
+}
+
