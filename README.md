@@ -60,3 +60,17 @@ this.strongeService.set('todoList', this.toDoList);
  > 主要是借助angualr中ViewChild修饰器，获取子组件的DOM并修改DOM的transform样式
 
 <img src="https://pic1.zhimg.com/80/v2-28c367af14014a368fa1ddaa41ca52d2_720w.gif" alt="侧边栏动画"  />
+
+### 5、Rxjs异步编程数据流
+>此处就分别使用了四种方法来获取异步数据
+
+1、同步
+
+2、回调
+
+3、异步（Promise）
+
+4、异步（Rxjs）
+
+具体的内容不再此处赘述，可以参考我的知乎文章：
+[爱跳的虫子：Rxjs异步编程数据流](https://zhuanlan.zhihu.com/p/147567629)
