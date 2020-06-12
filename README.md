@@ -83,4 +83,4 @@ this.strongeService.set('todoList', this.toDoList);
 
 3、jsonp
 
-<img src="https://pic3.zhimg.com/80/v2-f47afa23abe21502d6ae02f5d6bdde79_720w.png" alt="Angular 中的数据交互 案例
+<img src="https://pic3.zhimg.com/80/v2-f47afa23abe21502d6ae02f5d6bdde79_720w.png" alt="Angular 中的数据交互 案例" />
