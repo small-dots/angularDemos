@@ -74,3 +74,13 @@ this.strongeService.set('todoList', this.toDoList);
 
 具体的内容不再此处赘述，可以参考我的知乎文章：
 [爱跳的虫子：Rxjs异步编程数据流](https://zhuanlan.zhihu.com/p/147567629)
+
+### 6、Angular 中的数据交互
+
+1、get
+
+2、post
+
+3、jsonp
+
+<img src="https://pic3.zhimg.com/80/v2-f47afa23abe21502d6ae02f5d6bdde79_720w.png" alt="Angular 中的数据交互 案例
