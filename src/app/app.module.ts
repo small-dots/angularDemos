@@ -13,7 +13,11 @@ import {StrongeService} from './services/stronge.service';
 import {TodoListEnduranceComponent} from './component/todo-list-endurance/todo-list-endurance.component';
 import {SlideComponent} from './component/slide/slide.component';
 import {AsynchronousProgrammingService} from './services/asynchronous-programming.service';
-import { GetDateByasynComponent } from './component/get-date-byasyn/get-date-byasyn.component';
+import {GetDateByasynComponent} from './component/get-date-byasyn/get-date-byasyn.component';
+import {GetDataByHttpComponent} from './component/get-data-by-http/get-data-by-http.component';
+import {HttpClientService} from './services/http-client.service';
+import {HttpClient} from '@angular/common/http';
+import {HttpClientModule, HttpClientJsonpModule} from '@angular/common/http';
 
 // @NgModule装饰器，@NgModule接受一个元数据对象，告诉angular如何编译和启动应用
 @NgModule({
@@ -26,15 +30,22 @@ import { GetDateByasynComponent } from './component/get-date-byasyn/get-date-bya
     ToDoListComponent,
     TodoListEnduranceComponent,
     SlideComponent,
-    GetDateByasynComponent
+    GetDateByasynComponent,
+    GetDataByHttpComponent
   ],
   // 项目运行时依赖的组件
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule,
+    HttpClientJsonpModule
   ],
   // 项目配置需要的服务
-  providers: [StrongeService, AsynchronousProgrammingService],
+  providers: [StrongeService,
+    AsynchronousProgrammingService,
+    HttpClientService,
+    HttpClient,
+  ],
   // 指定应用的主视图（称为根组件），通过引导根AppModule来启动应用，这里一般写的是根组件
   bootstrap: [AppComponent]
 })

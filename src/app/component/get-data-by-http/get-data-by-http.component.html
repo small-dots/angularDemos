@@ -1,0 +1,43 @@
+<div class="contain">
+  <h2>数据的请求</h2>
+  <hr>
+  <h3>1、通过 angular 自带的 http 服务来 get 请求数据</h3>
+
+  <h4><--如果api涉及到跨域，还需要处理跨域的问题--></h4>
+  <div class="http1">
+    <button (click)="showUser()" style="margin: 10px 10px;">获取用户信息</button>
+    <table border="1px">
+      <tr>
+        <th>姓名</th>
+        <th>年龄</th>
+      </tr>
+      <tr *ngFor="let item of userList">
+        <td>{{item.name}}</td>
+        <td>{{item.age}}</td>
+      </tr>
+    </table>
+  </div>
+  <hr>
+  <h3>2、通过 angular 自带的 http 服务 post 提交数据</h3>
+  <div class="http1">
+    姓名:<input type="text" [(ngModel)]="username"><br>
+    年龄:<input type="text" [(ngModel)]="age">
+    <button (click)="postSomeDate()" style="margin: 10px 10px;">传递用户信息</button>
+    <button (click)="showUser()" style="margin: 10px 10px;">获取最新的用户信息</button>
+    <table border="1px">
+      <tr>
+        <th>姓名</th>
+        <th>年龄</th>
+      </tr>
+      <tr *ngFor="let item of userList">
+        <td>{{item.name}}</td>
+        <td>{{item.age}}</td>
+      </tr>
+    </table>
+  </div>
+  <h3>3、通过 Jsonp来获取服务器数据</h3>
+  <div class="http1">
+    <button (click)="getDataByJsonp()" style="margin: 10px 10px;">获取实时段子</button>
+  </div>
+</div>
+

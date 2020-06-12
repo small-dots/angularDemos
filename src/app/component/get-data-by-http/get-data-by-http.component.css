@@ -1,0 +1,26 @@
+.contain {
+  width: 450px;
+  margin: 20px auto;
+}
+
+h2 {
+  text-align: center;
+}
+
+th {
+  width: 100px;
+}
+
+td {
+  text-align: center;
+}
+
+hr {
+  width: 400px;
+  margin: 20px auto;
+}
+
+.http1 {
+  width: 400px;
+  margin: 20px auto;
+}
